@@ -1,0 +1,21 @@
+/* navbar.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Adjust as needed */
+  }
+  
+  .nav-link {
+    color: inherit; /* Use the default text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Hover effect */
+  .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+    text-decoration: underline; /* Show underline on hover */
+  }
+  

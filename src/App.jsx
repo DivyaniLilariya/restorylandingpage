@@ -8,7 +8,7 @@ function App() {
     helo amar
   </h1>
 
-     <h2>helloo divyaniiiiii</h2>
+     <h2>helloo divyaniiiiii how r u</h2>
     </>
   )
 }

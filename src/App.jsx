@@ -7,6 +7,8 @@ function App() {
     Hello world!
     helo amar
   </h1>
+
+     <h2>helloo divyaniiiiii</h2>
     </>
   )
 }

@@ -13,11 +13,11 @@ const BodySectionOne = () => {
       }}
     >
       
-      <h1 className="text-6xl pt-36 text-center  text-white font-bold">
+      <h1 className="text-6xl pt-36 text-center overflow-hidden  text-white font-bold">
         Elevate Your Employee Wellness
       </h1>
-      <h1 className="text-6xl pt-10 text-center text-white font-bold italic">with</h1>
-      <h1 className="text-6xl text-center pt-10 text-white font-bold">
+      <h1 className="text-6xl pt-10 text-center overflow-hidden text-white font-bold italic">with</h1>
+      <h1 className="text-6xl text-center pt-10 overflow-hidden text-white font-bold">
         Restory Healthytech's AI-Driven Health Check!
       </h1>
       <h3 className="text-white text-2xl pt-10 text-center">

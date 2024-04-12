@@ -9,6 +9,7 @@ const BodySectionOne = () => {
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        marginTop:'90px'
       }}
     >
       

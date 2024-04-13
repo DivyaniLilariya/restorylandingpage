@@ -3,6 +3,7 @@
     gap: 1rem;
     padding: 0 2rem;
     background: linear-gradient(to right, #5d8a53, #339e2f, #043f09);
+    
 }
 .left-t{
     display: flex;
@@ -35,42 +36,23 @@
 .right-t{
     flex: 1;
     position: relative;
-    height: 350px;
+    height: 450px;
 }
 .right-t>img{
     position: absolute;
-    width: 17rem;
-    height: 20rem;
+    width: 25rem;
+    height: 30rem;
     object-fit: cover;
     right: 8rem;
     top: 2rem;
 }
-.right-t>:nth-child(1)
-{
-    position: absolute;
-    width: 17rem;
-    height: 20rem;
-    border: 2px solid var(--orange);
-    background-color: transparent;
-    right: 9rem;
-    top: 0.9rem;
 
-}
-.right-t>:nth-child(2)
-{
-    position: absolute;
-    width: 17rem;
-    height: 20rem;
-    background: var(--planCard);
-    right: 7rem;
-    top: 4rem;
-}
 .arrows{
    display: flex;
    gap: 1rem;
    position: absolute;
    bottom: 1rem;
-   left: 3rem;
+   left: 1rem;
 }
 .arrows>img{
     width: 1.5rem;

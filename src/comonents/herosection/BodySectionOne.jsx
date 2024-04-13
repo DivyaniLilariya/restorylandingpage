@@ -6,7 +6,7 @@ const BodySectionOne = () => {
   const transition={type:"spring",duration:3}
   return (
     <div
-      className=" h-dvh"
+      className="z-50"
       style={{
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",

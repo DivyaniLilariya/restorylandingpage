@@ -4,7 +4,7 @@ import Logo from '../assets/Logo_Restory.png'; // Adjust the path as per your pr
 import '../comonents/navbar.css'
 const NavBar = () => {
   return (
-    <div className='navbar'>
+    <div className='navbar z-10'>
       <header className="w-full bg-stone-100 py-1">
         <nav className="flex justify-between items-center font-semibold text-xl text-black">
           <div className='flex items-center'>

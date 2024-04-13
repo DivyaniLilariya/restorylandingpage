@@ -44,7 +44,7 @@ const BodySectionTwo = () => {
   </div>
      <div className='testimonials' id='testimonial'>
    
-   <div className='left-t mt-20 leading-10 text-xl' style={{lineHeight:"50px"}}>
+   <div className='left-t my-24 leading-10 text-xl' style={{lineHeight:"50px"}}>
        <motion.span
        key={selected}
         initial={{opacity: 0, x: -100}}
@@ -56,7 +56,7 @@ const BodySectionTwo = () => {
        </motion.span>
       
    </div>
-   <div className='right-t mt-20 overflow-hidden'>
+   <div className='right-t my-24 overflow-hidden'>
    <motion.div
    initial={{opacity:0, x:-100}} 
    transition={{...transition, duration:2}}

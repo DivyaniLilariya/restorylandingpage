@@ -4,10 +4,10 @@ import image1 from "../../assets/t-image1.png"
 import image2 from "../../assets/t-image2.jpg";
 import image3 from "../../assets/t-image3.jpg";
 import leftArrow from '../../assets/leftArrow.png'
-import rightArrow from '../../assets/rightarrow.jpg'
+import rightArrow from '../../assets/rightnewarrow.jpg'
 import {motion} from 'framer-motion'
-
-
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 const testimonialsData = [
   {
     image: image1,
@@ -74,20 +74,16 @@ const BodySectionTwo = () => {
         transition={transition}
        src={testimonialsData[selected].image} alt='' />
         <div className='arrows'>
-   <img 
-     onClick={() => {
+        {/* <FaArrowLeft   onClick={() => {
        selected === 0 ? setSelected(tLength - 1) : setSelected((prev) => prev - 1);
-     }} 
-     src={leftArrow} 
-     alt='' 
-   />
-   <img
-     onClick={() => {
+     }} />
+     */}
+     
+   <FaArrowRight  onClick={() => {
        selected === tLength - 1 ? setSelected(0) : setSelected((prev) => prev + 1);
-     }} 
-     src={rightArrow} 
-     alt=''  // Make sure alt text is provided
-   />
+     }}  />
+    
+     
  </div>
     </div>
 </div>

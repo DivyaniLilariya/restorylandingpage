@@ -3,7 +3,7 @@ import image from "../../assets/background.gif";
 import { motion } from "framer-motion";
 
 const BodySectionOne = () => {
-  const transition={type:"spring",duration:6}
+  const transition={type:"spring",duration:3}
   return (
     <div
       className=" h-dvh"
@@ -11,7 +11,8 @@ const BodySectionOne = () => {
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        marginTop:'90px'
+        marginTop:'90px',
+        opacity:0.9
       }}
     >
       

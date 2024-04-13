@@ -1,7 +1,9 @@
 import React from "react";
-import image from "../../assets/body1background.png";
+import image from "../../assets/background.gif";
+import { motion } from "framer-motion";
 
 const BodySectionOne = () => {
+  const transition={type:"spring",duration:6}
   return (
     <div
       className=""
@@ -12,7 +14,8 @@ const BodySectionOne = () => {
         marginTop: '90px' // Adjust as needed
       }}
     >
-      <h1 className="text-6xl pt-36 text-center overflow-hidden text-white font-bold">
+      
+      <h1 className="text-6xl pt-36 text-center overflow-hidden  text-white font-bold">
         Elevate Your Employee Wellness
       </h1>
       <h1 className="text-6xl pt-10 text-center overflow-hidden text-white font-bold italic">with</h1>

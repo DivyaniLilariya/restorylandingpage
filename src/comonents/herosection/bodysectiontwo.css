@@ -3,7 +3,8 @@
     display: flex;
     gap: 1rem;
     padding: 0 2rem;
-    background: linear-gradient(to right, #5d8a53, #339e2f, #043f09);
+    background: linear-gradient(to right, #90648e, #03464d, #6b408a);
+    
 }
 .left-t{
     display: flex;
@@ -11,7 +12,7 @@
     gap: 2rem;
     flex-direction: column;
     text-transform: uppercase;
-    color: black;
+    color: white;
     margin-bottom: 20px;
 }
 .left-t>:nth-child(1)
@@ -37,6 +38,7 @@
     flex: 1;
     position: relative;
     height: 450px;
+    height: 450px;
 }
 .right-t>img{
     position: absolute;
@@ -56,12 +58,15 @@
 .arrows>img{
     width: 1.5rem;
     cursor: pointer;
+    /* Add other styles as needed */
+  
 }
+
 .stroke-text{
     color: transparent;
     font-family: Arial, Helvetica, sans-serif;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(209, 200, 200);
+    -webkit-text-stroke-color: rgb(175, 189, 220);
   }
 
 @media screen and (max-width: 768px) {

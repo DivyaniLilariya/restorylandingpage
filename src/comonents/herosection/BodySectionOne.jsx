@@ -1,7 +1,9 @@
 import React from "react";
-import image from "../../assets/body1background.png";
+import image from "../../assets/background.gif";
+import { motion } from "framer-motion";
 
 const BodySectionOne = () => {
+  const transition={type:"spring",duration:6}
   return (
     <div
       className=" h-dvh"
@@ -13,13 +15,34 @@ const BodySectionOne = () => {
       }}
     >
       
-      <h1 className="text-6xl pt-36 text-center overflow-hidden  text-white font-bold">
-        Elevate Your Employee Wellness
-      </h1>
-      <h1 className="text-6xl pt-10 text-center overflow-hidden text-white font-bold italic">with</h1>
-      <h1 className="text-6xl text-center pt-10 overflow-hidden text-white font-bold">
-        Restory Healthytech's AI-Driven Health Check!
-      </h1>
+      <motion.h1
+      initial={{opacity:0,x:-500}}
+      animate={{opacity:1,x:0}}
+      exit={{opacity:0,x:500}}
+      transition={transition}
+      className="text-6xl pt-36 text-center overflow-hidden  text-white font-bold">
+      Elevate Your Employee Wellness
+      </motion.h1>
+
+      <motion.h1
+      initial={{opacity:0,y:-500}}
+      animate={{opacity:1,y:0}}
+      exit={{opacity:0,y:500}}
+      transition={transition}
+      className="text-6xl pt-10 text-center overflow-hidden italic  text-white font-bold">
+      With
+      </motion.h1>
+
+      <motion.h1
+      initial={{opacity:0,x:-500}}
+      animate={{opacity:1,x:0}}
+      exit={{opacity:0,x:500}}
+      transition={transition}
+      className="text-6xl pt-10 text-center overflow-hidden  text-white font-bold">
+      Restory Healthytech's AI-Driven Health Check!
+      </motion.h1>
+
+     
       <h3 className="text-white text-2xl pt-10 text-center">
         Give your employees the most advanced and AI driven annual health
         checkup

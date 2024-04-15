@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../assets/background.gif";
+import image from "../../assets/body1background.png";
 import { motion } from "framer-motion";
 
 const BodySectionOne = () => {

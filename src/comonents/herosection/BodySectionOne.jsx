@@ -1,12 +1,12 @@
 import React from "react";
-import image from "../../assets/background.gif";
+import image from "../../assets/body1background.png";
 import { motion } from "framer-motion";
 
 const BodySectionOne = () => {
   const transition={type:"spring",duration:3}
   return (
     <div
-      className="z-50"
+      className="z-50 h-dvh"
       style={{
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",

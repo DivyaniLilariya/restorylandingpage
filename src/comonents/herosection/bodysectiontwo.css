@@ -1,4 +1,5 @@
 .testimonials{
+   
     display: flex;
     gap: 1rem;
     padding: 0 2rem;
@@ -37,20 +38,25 @@
     flex: 1;
     position: relative;
     height: 450px;
+    height: 450px;
 }
 .right-t>img{
     position: absolute;
     width: 25rem;
-    height: 30rem;
+    height:30rem;
     object-fit: cover;
     right: 8rem;
     top: 2rem;
 }
-
-
-.arrows{   
-    display: block;
-    margin: 500 auto;
+.arrows{
+   display: flex;
+   gap: 1rem;
+   position: absolute;
+   bottom: 1rem;
+   left: 3rem;
+}
+.arrows>img{
+    width: 1.5rem;
     cursor: pointer;
     /* Add other styles as needed */
   

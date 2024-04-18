@@ -7,16 +7,16 @@ import subscription from '../assets/subscription.png'
 const Services = () => {
   return (
     <div style={{ marginTop: "90px" }}>
-      <h3 className="text-2xl text-center font-bold dark:text-gray-800  uppercase">
+      <h3 className="text-2xl text-center font-bold p-10 dark:text-gray-800  uppercase">
         Stay healthy with Lyftrac by Restory: Your complete year-round
         healthcare partner.
       </h3>
-      <div className="mx-16 my-10">
-        <h3 className="text-md  font-medium uppercase">
+      <div className="mx-16 my-30">
+        <h3 className="text-md pl-8 font-medium uppercase mb-4">
           Our Single Yearly Subscription includes :
         </h3>
 
-        <ol className="space-y-1  list-decimal list-inside">
+        <ol className="space-y-1 pl-8 list-decimal list-inside">
           <li>90+ Parameters Master Health Check</li>
           <li>
             150 Lifestyle and Functional parameters for identifying health risks
@@ -32,12 +32,12 @@ const Services = () => {
       </div>
 
       <div>
-        <h3 className="text-2xl text-center font-bold dark:text-gray-800  uppercase">
+        <h3 className="text-2xl text-center font-bold p-10 dark:text-gray-800  uppercase">
           To request for a sample report and brochure copy call us on +91 80082
           47365
         </h3>
 
-        <div className="flex flex-wrap justify-around my-16">
+        <div className="flex flex-wrap  px-16 justify-around my-16">
           <div className="border-2 w-96 rounded-md h-96">
             <div className="">
               <img src={lyftrac} className="h-28 hover:bg-sky-700 " alt="image loading" />
@@ -86,7 +86,7 @@ const Services = () => {
       </div>
        {/* subscription section */}
       <div className="my-20">
-        <img src={subscription} className="m-auto" height={870} width={1170} alt="subscription image loading"/>
+        <img src={subscription} className="m-auto" height={870} width={1310} alt="subscription image loading"/>
       </div>
     </div>
   );

@@ -10,11 +10,11 @@ const BodySectionfour = () => {
       }}
     >
       <div class="container mx-auto flex px-5 pt-20 items-center justify-center flex-col text-center lg:w-5/12 w-full">
-        <h1 className="my-4 text-5xl font-bold leading-tight overflow-hidden mt-3">
+        <h1 className="my-4 text-5xl font-bold leading-tight overflow-hidden  font-['Poppins'] mt-3">
           Tailored Solutions for Your Business Needs
         </h1>
 
-        <p className="text-2xl mb-8 pt-4 text-justify">
+        <p className="text-2xl mb-8 pt-4 text-justify font-['Poppins'] ">
           Depending on organizational policies and budgets this is available in
           a variety of of offerings suited to all organizations at price points
           between INR 1200 - INR 4000 per head to cater to diverse company needs

@@ -8,39 +8,39 @@ const Contact = () => {
     <div style={{ marginTop: "90px" }} className="my-4">
       <div className="flex flex-wrap w-full justify-evenly">
         <div className="w-96 py-20 ">
-          <div className="justify-center p-4" >
+          <div className="justify-center p-4 flex " >
           <span
             style={{
               background:
                 "linear-gradient(90deg, rgba(131, 126, 226, 1) 24%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)",
             }}
-            className="p-4 justify-center mx-20 rounded-full text-white"
+            className="p-4 flex justify-center  rounded-full text-white"
           >
             <LocalPhoneRoundedIcon />
           </span>
           </div>
          
           <div>
-            <p className="text-justify py-2  font-['Poppins'] text-xl ">
+            <p className="flex justify-center font-['Poppins'] py-2 text-xl ">
               Phone: +91 8699897969
             </p>
           </div>
         </div>
 
         <div className="w-96 py-20">
-         <div className="justify-center p-4">
+         <div className="justify-center p-4 flex">
          <span
             style={{
               background:
                 "linear-gradient(90deg, rgba(131, 126, 226, 1) 24%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)",
             }}
-            className="p-4 mx-20 justify-center rounded-full  text-white"
+            className="p-4  flex justify-center rounded-full  text-white"
           >
             <LocationOnRoundedIcon />
           </span>
          </div>
           <div>
-            <p className="text-justifyfont-['Poppins'] py-2 text-xl ">
+            <p className="flex justify-center font-['Poppins'] py-2 text-xl ">
               3rd Floor, Plot-16, B-Block, Madhura Nagar, Hyderabad, Telangana
               500038
             </p>
@@ -49,19 +49,19 @@ const Contact = () => {
 
         <div className="w-96 py-20">
 
-          <div className="justify-center p-4">
+          <div className="justify-center p-4 flex">
           <span
             style={{
               background:
                 "linear-gradient(90deg, rgba(131, 126, 226, 1) 24%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)",
             }}
-            className="p-4 justify-center mx-20 rounded-full text-white"
+            className="p-4 flex justify-center text-center  rounded-full text-white"
           >
             <MailRoundedIcon />
           </span>
           </div>
           <div>
-            <p className="text-justify py-2 font-['Poppins'] text-xl">
+            <p className=" flex justify-center py-2 font-['Poppins'] text-xl">
               care@restory.in
             </p>
           </div>

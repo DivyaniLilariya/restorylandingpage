@@ -34,7 +34,7 @@ const BodySectionTwo = () => {
       <div className="testimonials">
         <div className="  text-4xl mt-10 text-center overflow-hidden text-white font-bold">
           <span> Revolutionize Employee </span>
-          <span className="stroke-text"> with Wellness AI-Powered </span>
+          <span > with Wellness AI-Powered </span>
           <span> Health Assessments</span>
         </div>
       </div>

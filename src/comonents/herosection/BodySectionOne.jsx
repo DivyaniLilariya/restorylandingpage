@@ -12,7 +12,8 @@ const BodySectionOne = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         marginTop:'90px',
-        opacity:0.9
+        opacity:0.9,
+        overflow:"hidden"
       }}
     >
       

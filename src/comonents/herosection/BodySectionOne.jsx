@@ -11,7 +11,7 @@ const BodySectionOne = () => {
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        marginTop:'90px',
+        marginTop:'80px',
         opacity:0.9,
         overflow:"hidden"
       }}

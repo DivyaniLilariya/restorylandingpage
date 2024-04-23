@@ -32,7 +32,7 @@ const BodySectionTwo = () => {
   return (
     <div>
       <div className="testimonials">
-        <div className="  text-4xl mt-10 text-center overflow-hidden text-white font-bold">
+        <div className="  text-4xl mt-10 text-center overflow-hidden text-white font-bold ">
           <span> Revolutionize Employee </span>
           <span > with Wellness AI-Powered </span>
           <span> Health Assessments</span>
@@ -41,7 +41,7 @@ const BodySectionTwo = () => {
       <div className="testimonials" id="testimonial">
         <div
           className="left-t my-24 leading-10 text-xl"
-          style={{ lineHeight: "50px" }}
+          style={{ lineHeight: "50px",marginTop:"150px" }}
         >
           <motion.span
             key={selected}

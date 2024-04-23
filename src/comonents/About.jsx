@@ -4,7 +4,7 @@ import { FaCircle } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="flex justify flex-wrap justify-around p-9"  style={{ marginTop: "90px" }}>
+    <div className="flex justify flex-wrap justify-around p-9"  style={{ marginTop: "80px" }}>
       <div>
         <img src={aboutus} className="h-auto mt-16 "  height="700" width="500"
         alt="image is loading" />

@@ -5,8 +5,8 @@ import MailRoundedIcon from "@mui/icons-material/MailRounded";
 
 const Contact = () => {
   return (
-    <div style={{ marginTop: "90px" }} className="my-4">
-      <div className="flex flex-wrap  w-full justify-evenly md:flex  sm:flex flex-row ">
+    <div style={{ marginTop: "80px" }} className="my-4">
+      <div className="flex flex-wrap w-full justify-evenly">
         <div className="w-96 py-20 ">
           <div className="justify-center p-4 flex " >
           <span

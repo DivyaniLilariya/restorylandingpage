@@ -6,7 +6,7 @@ import subscription from '../assets/subscription.png'
 
 const Services = () => {
   return (
-    <div style={{ marginTop: "90px" }}>
+    <div style={{ marginTop: "80px" }}>
       <h3 className="text-2xl text-center font-bold p-10 font-['Poppins'] dark:text-gray-800  uppercase">
         Stay healthy with Lyftrac by Restory: Your complete year-round
         healthcare partner.

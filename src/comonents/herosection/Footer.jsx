@@ -4,6 +4,12 @@ import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const navigate=useNavigate()
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Optional: smooth scrolling animation
+    });
+  };
   return (
     <div>
       <footer className=" text-center text-neutral-600 bg-blue-900 dark:text-neutral-200 lg:text-left">
@@ -105,20 +111,20 @@ const Footer = () => {
                 links
               </h6>
               <p className="mb-4">
-                <a onClick={()=>{navigate("/")}} className="text-neutral-600 dark:text-neutral-200">
+                <a onClick={()=>{navigate("/"); scrollToTop();}} className="text-neutral-600 dark:text-neutral-200 hover:text-yellow-300">
                   Home
                 </a>
               </p>
               <p className="mb-4">
-                <a onClick={()=>{navigate("/about")}} className="text-neutral-600 dark:text-neutral-200">
+                <a onClick={()=>{navigate("/about"); scrollToTop();}} className="text-neutral-600 dark:text-neutral-200 hover:text-yellow-300">
                   About Us
                 </a>
               </p>
               <p className="mb-4">
-                <a onClick={()=>{navigate("/services")}} className="text-neutral-600 dark:text-neutral-200">Services</a>
+                <a onClick={()=>{navigate("/services"); scrollToTop();}} className="text-neutral-600 dark:text-neutral-200 hover:text-yellow-300">Services</a>
               </p>
               <p>
-                <a  onClick={()=>{navigate("/contact")}} className="text-neutral-600 dark:text-neutral-200">Contacts</a>
+                <a  onClick={()=>{navigate("/contact"); scrollToTop();}} className="text-neutral-600 dark:text-neutral-200 hover:text-yellow-300">Contacts</a>
               </p>
             </div>
             {/* <!-- visitus section --> */}

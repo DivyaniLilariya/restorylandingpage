@@ -34,7 +34,7 @@ export default function Example() {
                       className={classNames(
                         'nav-link',
                         'text-gray-900 hover:text-black',
-                        'rounded-md px-3 py-2 text-sm text-xl'
+                        'rounded-md px-3 py-2  text-xl'
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >

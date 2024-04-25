@@ -1,4 +1,3 @@
-
 import { Disclosure } from '@headlessui/react';
 import { Link } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -20,10 +19,10 @@ export default function Example() {
     <Disclosure as="nav" className="bg-zinc-200 shadow-lg fixed w-full z-10">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 overflow-hidden h-20" style={{paddingLeft:"10px"}}>
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 overflow-hidden h-20" style={{ paddingLeft: "10px" }}>
             <div className="relative flex h-full items-center justify-between">
               <div className="flex items-center">
-                <img src={Logo} alt="Restory Logo" className="w-50 h-20 " style={{marginLeft:"-20px"}}/>
+                <img src={Logo} alt="Restory Logo" className="w-50 h-20 " style={{ marginLeft: "-20px" }} />
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4 justify-end">
@@ -33,8 +32,10 @@ export default function Example() {
                       to={item.href}
                       className={classNames(
                         'nav-link',
-                        'text-gray-900 hover:text-black',
-                        'rounded-md px-3 py-2 text-sm text-xl'
+                        'text-gray-900',
+                        'rounded-md px-3 py-2 text-md text-md',
+                        'hover:text-sky-500',
+                        'hover:border-b-2 border-black' // Add hover effect here
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >
@@ -57,7 +58,7 @@ export default function Example() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2 bg-zinc-200" >
+            <div className="space-y-1 px-2 pb-3 pt-2 bg-zinc-200">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -65,7 +66,9 @@ export default function Example() {
                   className={classNames(
                     'block',
                     'px-3 py-2 text-base font-medium',
-                    'text-gray-900 hover:text-black'
+                    'text-gray-900 hover:text-sky-500',
+                   
+                     // Add hover effect here
                   )}
                 >
                   {item.name}

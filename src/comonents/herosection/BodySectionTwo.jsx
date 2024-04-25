@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./bodysectiontwo.css";
-import image1 from "../../assets/t-image1.png";
-import image2 from "../../assets/t-image2.jpg";
-import image3 from "../../assets/t-image3.jpg";
+import image1 from "../../assets/img14.png";
+import image2 from "../../assets/img15.png";
+import image3 from "../../assets/img16.png";
 import leftArrow from "../../assets/leftArrow.png";
 import rightArrow from "../../assets/rightnewarrow.jpg";
 import { motion } from "framer-motion";
-
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 const testimonialsData = [
   {
     image: image1,
@@ -39,10 +40,18 @@ const BodySectionTwo = () => {
         </div>
       </div>
       <div className="testimonials" id="testimonial">
+      <div className="arrorback">
+      <IoIosArrowBack  onClick={() => {
+                selected === 0
+                  ? setSelected(tLength - 1)
+                  : setSelected((prev) => prev - 1);
+              }} />
+      </div>
         <div
-          className="left-t my-24 leading-10 text-xl"
+          className="left-t my-24  leading-10 text-xl"
           style={{ lineHeight: "50px",marginTop:"150px" }}
         >
+        
           <motion.span
             key={selected}
             initial={{ opacity: 0, x: -100 }}
@@ -76,24 +85,14 @@ const BodySectionTwo = () => {
             width={600}
           />
           <div className="arrows">
-            <img
-              onClick={() => {
-                selected === 0
-                  ? setSelected(tLength - 1)
-                  : setSelected((prev) => prev - 1);
-              }}
-              src={leftArrow}
-              alt=""
-            />
-            <img
-              onClick={() => {
+           <IoIosArrowForward 
+            onClick={() => {
                 selected === tLength - 1
                   ? setSelected(0)
                   : setSelected((prev) => prev + 1);
               }}
-              src={rightArrow}
-              alt="" // Make sure alt text is provided
-            />
+           />
+           
           </div>
         </div>
       </div>

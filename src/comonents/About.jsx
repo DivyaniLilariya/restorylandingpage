@@ -71,7 +71,7 @@ const About = () => {
         <h1 className="text-4xl text-center font-bold overflow-hidden font-['Poppins'] pb-8 ">
           OUR TEAMS
         </h1>
-        <div className="flex  justify-around my-8">
+        <div className="flex flex-wrap justify-around my-8">
           <div className="hover:bg-emerald-300">
             <img src={harsha} alt="image load"/>
             <h5 className="text-2xl text-center font-bold overflow-hidden font-['Poppins']">Dr Harsha Guduru</h5>

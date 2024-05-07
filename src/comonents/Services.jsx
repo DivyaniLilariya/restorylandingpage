@@ -25,8 +25,7 @@ const Services = () => {
           <li className="font-['Poppins'] ">Quarterly blood tests to track your progress</li>
           <li className="font-['Poppins'] ">Prescription audits for drug-drug interactions</li>
           <li className="font-['Poppins'] ">On demand Counselling and Quarterly Assessments</li>
-          <li className="font-['Poppins'] ">Intuitive Smart reports</li>
-          <li className="font-['Poppins'] ">Intuitive Smart reports</li>
+          <li className="font-['Poppins'] ">Intuitive Smart reports</li> 
           <li className="font-['Poppins'] ">Nutritional Guidance</li>
           <li className="font-['Poppins'] ">Daily Activage Functional Fitness</li>
         </ol>

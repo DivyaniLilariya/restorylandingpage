@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../assets/body1background.png";
+import image from "../../assets/body1background.jpeg";
 import { motion } from "framer-motion";
 import './bodysectionone.css'
 
@@ -46,9 +46,10 @@ const BodySectionOne = () => {
       </motion.h1>
 
      
-      <h3 className="text-white text-2xl pt-10 text-center text-resize">
-        Give your employees the most advanced and AI driven annual health
-        checkup
+      <h3 className="text-2xl pt-10 text-center text-resize">
+        <mark className="bg-red-600 text-white">  Give your employees the most advanced and AI driven annual health
+        checkup</mark>
+       
       </h3>
       <div className="text-center pt-10">
  

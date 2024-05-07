@@ -1,12 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const BodySectionfour = () => {
+  const navigate=useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Optional: smooth scrolling animation
+    });
+  };
   return (
     <div
-      className="w-screen h-screen text-white"
+      className=" text-white py-30"
       style={{
         background:"linear-gradient(90deg, rgba(131, 126, 226, 1) 24%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)",
-      overflow:"hidden"
+     
       }}
     >
       <div class="container mx-auto flex px-5 pt-20 items-center justify-center flex-col text-center lg:w-5/12 w-full">
@@ -22,9 +30,9 @@ const BodySectionfour = () => {
         </p>
       </div>
 
-      <div className="flex justify-center mx-auto">
+      <div className="flex justify-center mx-auto pb-14">
         <button
-          onClick={() => console.log("leads to the contact form")}
+         onClick={()=>{navigate('/contact'); scrollToTop();}}
           className="hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8"
         >
           Get a Quote

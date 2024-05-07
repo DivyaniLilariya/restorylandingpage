@@ -3,8 +3,6 @@ import "./bodysectiontwo.css";
 import image1 from "../../assets/img14.png";
 import image2 from "../../assets/img15.png";
 import image3 from "../../assets/img16.png";
-import leftArrow from "../../assets/leftArrow.png";
-import rightArrow from "../../assets/rightnewarrow.jpg";
 import { motion } from "framer-motion";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -48,8 +46,8 @@ const BodySectionTwo = () => {
               }} />
       </div>
         <div
-          className="left-t my-24  leading-10 text-xl"
-          style={{ lineHeight: "50px",marginTop:"150px" }}
+          className="left-t my-20 leading-10 text-xl"
+          style={{ lineHeight: "50px" }}
         >
         
           <motion.span
@@ -62,7 +60,7 @@ const BodySectionTwo = () => {
             {testimonialsData[selected].review}
           </motion.span>
         </div>
-        <div className="right-t my-24 overflow-hidden">
+        <div className="right-t my-10 overflow-hidden">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             transition={{ ...transition, duration: 2 }}

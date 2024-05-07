@@ -17,7 +17,7 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <Disclosure as="nav" className="bg-zinc-200 shadow-lg fixed w-full z-10">
-      {({ open }) => (
+      {({ open, close }) => ( // Add close function to Disclosure
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 overflow-hidden h-20" style={{ paddingLeft: "10px" }}>
             <div className="relative flex h-full items-center justify-between">
@@ -38,6 +38,7 @@ export default function Example() {
                         'hover:border-b-2 border-black' // Add hover effect here
                       )}
                       aria-current={item.current ? 'page' : undefined}
+                      onClick={close} // Close the Disclosure when link is clicked
                     >
                       {item.name}
                     </Link>
@@ -67,9 +68,9 @@ export default function Example() {
                     'block',
                     'px-3 py-2 text-base font-medium',
                     'text-gray-900 hover:text-sky-500',
-                   
                      // Add hover effect here
                   )}
+                  onClick={close} // Close the Disclosure when link is clicked
                 >
                   {item.name}
                 </Link>

@@ -30,7 +30,7 @@ const BodySectionTwo = () => {
 
   return (
     <div>
-      <div className="testimonials">
+      <div className="testimonials ">
         <div className="  text-4xl mt-10 text-center overflow-hidden text-white font-bold ">
           <span> Revolutionize Employee </span>
           <span > with Wellness AI-Powered </span>

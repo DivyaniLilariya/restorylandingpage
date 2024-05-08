@@ -195,17 +195,3 @@ const About = () => {
 };
 
 export default About;
-
-
-
-{/* <div className="hover:bg-cyan-300 hover:text-white">
-            <img src={subroto} alt="image load" className="hover:bg-gray-200 rounded-lg p-2"/>
-            <h5 className="text-2xl text-center font-bold overflow-hidden font-['Poppins']">Subroto Banerjee</h5>
-            <p className="text-center  font-medium text-gray-300 dark:text-gray-400">PRESIDENT MARKETING</p>
-          </div>
-
-          <div className="hover:bg-cyan-300 hover:text-white">
-            <img src={rajesh} alt="image load" className="hover:bg-gray-200 rounded-lg p-2"/>
-            <h5 className="text-2xl text-center font-bold overflow-hidden font-['Poppins']">Rajesh Nair</h5>
-            <p className="text-center  font-medium text-gray-300 dark:text-gray-400">COO</p>
-          </div> */}

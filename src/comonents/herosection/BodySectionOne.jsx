@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import image from "../../assets/body1background.jpeg";
 import pic1 from "../../assets/pic1.jpeg";
 import pic2 from "../../assets/pic2.jpeg";
-import pic3 from '../../assets/pic3.jpg'
-import pic4 from '../../assets/pic4.jpg'
+
 import { motion } from "framer-motion";
 import "./bodysectionone.css";
 import { useNavigate } from "react-router-dom";
 
-const images = [image, pic1, pic4, pic3,pic2];
+const images = [image, pic1, pic2];
 
 const BodySectionOne = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -26,7 +25,7 @@ const scrollToTop = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -42,7 +41,7 @@ const scrollToTop = () => {
         backgroundSize: "cover",
         backgroundPosition: "center", // Center the background image
         marginTop: "80px",
-        opacity: 0.9,
+        opacity: 0.2,
         overflow: "hidden",
       }}
       initial={{ opacity: 0 }} // Initial animation state
@@ -87,7 +86,7 @@ const scrollToTop = () => {
         </mark>
       </h3>
       <div className="text-center pt-10">
-        <button className="border-solid text-center border-2 my-5 border-l-yellow-50 w-max px-2 py-2 text-white rounded-md transition duration-300 ease-in-out hover:bg-yellow-500 hover:text-black">
+        <button onClick={()=>{navigate("/services"); scrollToTop();} } className="border-solid text-center border-2 my-5 border-l-yellow-50 w-max px-2 py-2 text-white rounded-md transition duration-300 ease-in-out hover:bg-yellow-500 hover:text-black">
           Learn More
         </button>
       </div>

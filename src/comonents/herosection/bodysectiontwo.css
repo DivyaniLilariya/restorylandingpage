@@ -68,7 +68,7 @@
 @media screen and (max-width: 768px) {
     .testimonials{
         flex-direction: column;
-overflow: auto;
+overflow: hidden;
     }
     .right-t{
         display: flex;
@@ -95,7 +95,7 @@ overflow: auto;
     .arrows {
         display: flex;
         gap: 1rem;
-        justify-content: center; 
+        justify-content: space-between; 
         margin-left: 250px;/* Center arrows horizontally */
       }
       .arrorback,

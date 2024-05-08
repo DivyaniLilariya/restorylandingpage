@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div className="mx-20 py-10 flex text-center md:text-left">
-          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid-1 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           
             <div className="">
               <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
@@ -85,8 +85,8 @@ const Footer = () => {
               </p>
             </div>
           
-            <div className="">
-              <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            <div className="" style={{textAlign:"center"}}>
+              <h6 style={{textAlign:"center",alignItems:"center",justifyContent:"center"}}  className="mb-4 flex font-semibold uppercase md:justify-start">
                 links
               </h6>
               <p className="mb-4">

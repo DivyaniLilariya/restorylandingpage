@@ -5,26 +5,35 @@ import image2 from "../../assets/img15.png";
 import image3 from "../../assets/img16.png";
 import { motion } from "framer-motion";
 import "./bodysectionone.css";
+import { useNavigate } from "react-router-dom";
 
 const images = [image, image1, image2, image3];
 
 const BodySectionOne = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+const navigate = useNavigate();
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // Optional: smooth scrolling animation
+  });
+};
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
 
-  const transition = { type: "spring", duration: 3 };
+  const transition = { type: "tween", duration: 1 }; // Change transition to "tween" and adjust duration
 
   return (
-    <div
+    <motion.div // Wrap the entire content in a motion.div for Framer Motion animation
       className="z-50 h-dvh sm:w-full mt-24 maindiv"
       style={{
         backgroundImage: `url(${images[currentImageIndex]})`,
@@ -35,12 +44,16 @@ const BodySectionOne = () => {
         opacity: 0.9,
         overflow: "hidden",
       }}
+      initial={{ opacity: 0 }} // Initial animation state
+      animate={{ opacity: 1 }} // Animation when component mounts
+      exit={{ opacity: 0 }} // Animation when component unmounts
+      transition={transition} // Apply the transition
     >
-      <motion.h1
-        initial={{ opacity: 0, x: -500 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 500 }}
-        transition={transition}
+      <motion.h1 // Wrap each text element in a motion.h1 for Framer Motion animation
+        initial={{ opacity: 0, y: -50 }} // Initial animation state
+        animate={{ opacity: 1, y: 0 }} // Animation when component mounts
+        exit={{ opacity: 0, y: -50 }} // Animation when component unmounts
+        transition={transition} // Apply the transition
         className="text-4xl sm:text-6xl pt-24 text-center overflow-hidden text-white font-bold text-resize"
       >
         Elevate Your Employee Wellness
@@ -73,11 +86,11 @@ const BodySectionOne = () => {
         </mark>
       </h3>
       <div className="text-center pt-10">
-        <button className="border-solid text-center border-2 my-5 border-l-yellow-50 w-max px-2 py-2 text-white rounded-md transition duration-300 ease-in-out hover:bg-yellow-500 hover:text-black">
+        <button onClick={()=>{navigate("/services"); scrollToTop();}} className="border-solid text-center border-2 my-5 border-l-yellow-50 w-max px-2 py-2 text-white rounded-md transition duration-300 ease-in-out hover:bg-yellow-500 hover:text-black">
           Learn More
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

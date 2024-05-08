@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import image from "../../assets/body1background.jpeg";
-import image1 from "../../assets/img14.png";
-import image2 from "../../assets/img15.png";
-import image3 from "../../assets/img16.png";
+import pic1 from "../../assets/pic1.jpeg";
+import pic2 from "../../assets/pic2.jpeg";
+import pic3 from '../../assets/pic3.jpg'
+import pic4 from '../../assets/pic4.jpg'
 import { motion } from "framer-motion";
 import "./bodysectionone.css";
 
-const images = [image, image1, image2, image3];
+const images = [image, pic1, pic4, pic3,pic2];
 
 const BodySectionOne = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -73,7 +74,7 @@ const BodySectionOne = () => {
         </mark>
       </h3>
       <div className="text-center pt-10">
-        <button className="border-solid text-center border-2 my-5 border-l-yellow-50 w-max px-2 py-2 text-white rounded-md transition duration-300 ease-in-out hover:bg-yellow-500 hover:text-black">
+        <button className="border-solid text-center border-2 mt-12 border-l-yellow-50 w-max px-2 py-2 text-white rounded-md transition duration-300 ease-in-out hover:bg-yellow-500 hover:text-black">
           Learn More
         </button>
       </div>

@@ -11,7 +11,7 @@ const BodySectionfour = () => {
   };
   return (
     <div
-      className=" text-white py-30"
+      className=" text-white py-30 "
       style={{
         background:"linear-gradient(90deg, rgba(131, 126, 226, 1) 24%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)",
      

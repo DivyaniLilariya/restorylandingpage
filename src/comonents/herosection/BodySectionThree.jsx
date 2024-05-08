@@ -5,7 +5,7 @@ import uparrow from '../../assets/uparrow.png';
 
 const BodySectionThree = () => {
   return (
-    <div style={{ backgroundColor: "#6f42c1" }} className='flex flex-col md:flex-row md:flex-wrap justify-around py-8 md:py-8 sm:py-8 lg:py-8 xl:py-8 2xl:py-8'>
+    <div style={{ backgroundColor: "#6f42c1" }} className='flex  flex-col md:flex-row md:flex-wrap justify-around py-8 md:py-8 sm:py-8 lg:py-8 xl:py-8 2xl:py-8'>
       <div className='w-full md:w-80 lg:w-96 mb-8 md:mb-0 p-4'>
         <img className="m-auto rounded-full shadow-md" src={clockicon} alt='image load' height={120} width={120} />
         <h5 className="text-center shadow-gray-500 font-bold my-6 text-white text-lg md:text-2xl overflow-hidden font-['Poppins']">Convenience & Efficiency</h5>

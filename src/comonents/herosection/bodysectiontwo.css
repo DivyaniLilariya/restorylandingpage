@@ -96,7 +96,7 @@ overflow: hidden;
         display: flex;
         gap: 1rem;
         justify-content: space-between; 
-        margin-left: 250px;/* Center arrows horizontally */
+        margin-left: 280px;/* Center arrows horizontally */
       }
       .arrorback,
       .arrows > * {

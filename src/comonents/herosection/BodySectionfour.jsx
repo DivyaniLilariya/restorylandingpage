@@ -17,7 +17,7 @@ const BodySectionfour = () => {
      
       }}
     >
-      <div class="container mx-auto flex px-5 pt-20 items-center justify-center flex-col text-center lg:w-5/12 w-full">
+      <div className="container mx-auto flex px-5 pt-20 items-center justify-center flex-col text-center lg:w-5/12 w-full">
         <h1 className="my-4 text-5xl font-bold leading-tight overflow-hidden  font-['Poppins'] mt-3">
           Tailored Solutions for Your Business Needs
         </h1>

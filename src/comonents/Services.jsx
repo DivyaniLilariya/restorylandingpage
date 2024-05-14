@@ -7,11 +7,11 @@ import subscription from '../assets/subscription.png'
 const Services = () => {
   return (
     <div style={{ marginTop: "80px" }}>
-      <h3 className="text-2xl text-center font-bold mt-10 font-['Poppins']  dark:text-gray-800  uppercase overflow-hidden" style={{marginRight:"20px"}}>
+      <h3 className="text-2xl text-center font-bold mt-10 font-['Poppins'] dark:text-gray-800  uppercase overflow-hidden" style={{marginRight:"20px"}}>
         Stay healthy with Lyftrac by Restory: Your complete year-round
         healthcare partner.
       </h3>
-      <div className="mx-16 my-30">
+      <div className="mx-4 sm:mx-8 md:mx-16 my-10 sm:my-10">
         <h3 className="text-md pl-8 font-medium uppercase mb-4 font-['Poppins']">
           Our Single Yearly Subscription includes:
         </h3>
@@ -37,8 +37,8 @@ const Services = () => {
           47365
         </h3>
 
-        <div className="flex flex-wrap  px-16 justify-around my-16">
-          <div className="border-2 w-96 rounded-md h-96">
+        <div className="flex flex-wrap px-4 sm:px-8 md:px-16 my-10 sm:my-16 justify-around">
+          <div className="border-2 w-96 rounded-md h-100 p-4 mb-8 sm:mb-10" style={{overflow:"hidden"}}>
             <div className="">
               <img src={lyftrac} className="h-24 mb-4 w-full border-b-2 " alt="image loading" />
             </div>
@@ -54,7 +54,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="border-2 w-96 rounded-md">
+          <div className="border-2 w-96 rounded-md h-100 p-4 mb-8 sm:mb-10">
             <div>
               <img src={pharmony} className="h-24 mb-4 w-full border-b-2" alt="image loading" />
             </div>
@@ -68,7 +68,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className=" border-2 w-96 rounded-md">
+          <div className="border-2 w-96 rounded-md h-100 p-4 mb-8 sm:mb-10">
             <div>
               <img src={activage} className="h-24 mb-4 w-full border-b-2" alt="image loading" />
             </div>
@@ -93,4 +93,3 @@ const Services = () => {
 };
 
 export default Services;
-

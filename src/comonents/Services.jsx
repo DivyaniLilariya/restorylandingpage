@@ -7,13 +7,13 @@ import subscription from '../assets/subscription.png'
 const Services = () => {
   return (
     <div style={{ marginTop: "80px" }}>
-      <h3 className="text-2xl text-center font-bold p-10 font-['Poppins']  dark:text-gray-800  uppercase">
+      <h3 className="text-2xl text-center font-bold mt-10 font-['Poppins']  dark:text-gray-800  uppercase overflow-hidden" style={{marginRight:"20px"}}>
         Stay healthy with Lyftrac by Restory: Your complete year-round
         healthcare partner.
       </h3>
-      <div className="mx-16 my-30 ">
+      <div className="mx-16 my-30">
         <h3 className="text-md pl-8 font-medium uppercase mb-4 font-['Poppins']">
-          Our Single Yearly Subscription includes :
+          Our Single Yearly Subscription includes:
         </h3>
 
         <ol className="space-y-1 pl-8 list-decimal list-inside">
@@ -32,20 +32,20 @@ const Services = () => {
       </div>
 
       <div>
-        <h3 className="text-2xl text-center font-bold p-10 font-['Poppins'] dark:text-gray-800  uppercase">
+        <h3 className="text-2xl text-center overflow-hidden  font-bold font-['Poppins'] dark:text-gray-800  uppercase" >
           To request for a sample report and brochure copy call us on +91 80082
           47365
         </h3>
 
         <div className="flex flex-wrap  px-16 justify-around my-16">
-          <div className="border-2 w-96 rounded-md h-100">
+          <div className="border-2 w-96 rounded-md h-96">
             <div className="">
               <img src={lyftrac} className="h-24 mb-4 w-full border-b-2 " alt="image loading" />
             </div>
             <div className="w-full  px-9 ">
               <h3 className="text-xl text-center font-bold font-['Poppins'] mb-5">LYFTRAC</h3>
               <p className="text-justify font-normal font-['Poppins']  text-gray-700">
-                A Comprehensive and holistic health assessment using medical and
+              A Comprehensive and holistic health assessment using medical and
                 lifestyle data. It assesses pathological values, physiological
                 parameters, nutritional status, physical and emotional health to
                 develop a personalised and proprietary LyfTrac Score to help
@@ -54,11 +54,11 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="border-2 w-96 rounded-md h-100">
+          <div className="border-2 w-96 rounded-md">
             <div>
               <img src={pharmony} className="h-24 mb-4 w-full border-b-2" alt="image loading" />
             </div>
-            <div className="w-full px-9">
+            <div className="w-full px-9 ">
               <h3 className="text-xl text-center font-bold font-['Poppins'] mb-5">PHARMONY</h3>
               <p className="text-justify font-normal font-['Poppins'] text-gray-700">
                 Analyze drug interactions basis your different prescriptions
@@ -68,7 +68,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className=" border-2 w-96 rounded-md h-100">
+          <div className=" border-2 w-96 rounded-md">
             <div>
               <img src={activage} className="h-24 mb-4 w-full border-b-2" alt="image loading" />
             </div>
@@ -84,8 +84,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-       {/* subscription section */}
-      <div className="my-20">
+      {/* subscription section */}
+      <div className=" px-16">
         <img src={subscription} className="m-auto" height={870} width={1310} alt="subscription image loading"/>
       </div>
     </div>
@@ -93,3 +93,4 @@ const Services = () => {
 };
 
 export default Services;
+

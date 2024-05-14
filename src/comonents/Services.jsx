@@ -7,11 +7,11 @@ import subscription from '../assets/subscription.png'
 const Services = () => {
   return (
     <div style={{ marginTop: "80px" }}>
-      <h3 className="text-2xl text-center font-bold p-10 font-['Poppins'] dark:text-gray-800  uppercase">
+      <h3 className="text-2xl text-center font-bold p-10 font-['Poppins']  dark:text-gray-800  uppercase">
         Stay healthy with Lyftrac by Restory: Your complete year-round
         healthcare partner.
       </h3>
-      <div className="mx-16 my-30">
+      <div className="mx-16 my-30 ">
         <h3 className="text-md pl-8 font-medium uppercase mb-4 font-['Poppins']">
           Our Single Yearly Subscription includes :
         </h3>
@@ -38,7 +38,7 @@ const Services = () => {
         </h3>
 
         <div className="flex flex-wrap  px-16 justify-around my-16">
-          <div className="border-2 w-96 rounded-md h-96">
+          <div className="border-2 w-96 rounded-md h-100">
             <div className="">
               <img src={lyftrac} className="h-24 mb-4 w-full border-b-2 " alt="image loading" />
             </div>
@@ -54,7 +54,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="border-2 w-96 rounded-md">
+          <div className="border-2 w-96 rounded-md h-100">
             <div>
               <img src={pharmony} className="h-24 mb-4 w-full border-b-2" alt="image loading" />
             </div>
@@ -68,7 +68,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className=" border-2 w-96 rounded-md">
+          <div className=" border-2 w-96 rounded-md h-100">
             <div>
               <img src={activage} className="h-24 mb-4 w-full border-b-2" alt="image loading" />
             </div>

@@ -12,8 +12,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm('service_whqovnp', 'template_zzk9o4f', form.current, {
+    emailjs.sendForm('service_whqovnp', 'template_zzk9o4f', form.current, {
         publicKey: '6kczknkn3uaqNoc1m',
       })
       .then(
@@ -95,7 +94,7 @@ const Contact = () => {
 
     
 
-      <div>
+      <div >
         <form ref={form} onSubmit={sendEmail}  class="max-w-lg mx-auto">
           <div class="mb-5">
             <label

@@ -86,7 +86,7 @@ const scrollToTop = () => {
         </mark>
       </h3>
       <div className="text-center pt-10">
-        <button onClick={()=>{navigate("/services"); scrollToTop();} } className="border-solid border-black text-center border-2  my-5 w-max px-2 py-2 text-black rounded-md transition duration-300 ease-in-out hover:bg-yellow-500 hover:text-black">
+        <button onClick={()=>{navigate("/services"); scrollToTop();} } className="border-solid border-black text-center border-2  my-5 w-max px-2 py-2 text-black rounded-md transition duration-300 ease-in-out hover:bg-yellow-500 hover:text-white ">
           Learn More
         </button>
       </div>

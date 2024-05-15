@@ -1,101 +1,97 @@
-import React, { useState } from "react";
-import "./bodysectiontwo.css";
-import image1 from "../../assets/img14.png";
-import image2 from "../../assets/img15.png";
-import image3 from "../../assets/img16.png";
-import { motion } from "framer-motion";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
-const testimonialsData = [
-  {
-    image: image1,
-    review:
-      "What sets Restory apart from others is our holistic approach to health assessment. In addition to standard blood parameters, we consider over 150 lifestyle factors including nutrition, psychological well-being, and social aspects to provide a thorough evaluation of individual health. ",
-  },
-  {
-    image: image2,
-    review:
-      "Our proprietary AI driven LyfTrac Report synthesizes this information into actionable insights, empowering individuals to make informed and proactive decisions about their health. This is then reviewed by our Medical Team and personalised solutions are provided for each individual tailored to their requirements  ",
-  },
-  {
-    image: image3,
-    review:
-      "Furthermore, Restory conducts prescription audits for all participants, identifying potential drug-drug interactions and instances of medication duplication. Our aim is to ensure that individual receives personalized attention and guidance for optimal health outcomes",
-  },
-];
-const BodySectionTwo = () => {
-  const transition = { type: "spring", duration: 3 };
-  const [selected, setSelected] = useState(0);
-  const tLength = testimonialsData.length;
+import React from 'react';
+import SwiperCore from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
+SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
+
+import image1 from '../../assets/img14.png';
+import image2 from '../../assets/img15.png';
+import image3 from '../../assets/img16.png';
+
+const BodySectionTwo = () => {
   return (
-    <div>
-      <div className="testimonials ">
-        <div className="  text-4xl mt-10 text-center overflow-hidden text-white font-bold ">
-          <span> Revolutionize Employee </span>
-          <span > with Wellness AI-Powered </span>
-          <span> Health Assessments</span>
+    <div className='overflow-hidden bg-gradient-to-t from-neutral-400 to-neutral-900 '>
+      <div className="text-4xl overflow-hidden mt-10 text-center text-white font-bold">
+        <span>Revolutionize Employee </span>
+        <span>Wellness with AI-Powered </span>
+        <span>Health Assessments</span>
+      </div>
+      <Swiper
+        cssMode={true}
+        navigation={true}
+        pagination={{ clickable: true }}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className='p-5'
+       
+      >
+        <SwiperSlide>
+      <div className='flex flex-col md:flex-row items-center m-4 '>
+        <div className='w-full h-72 md:w-2/3 md:h-80 overflow-hidden pl-2'>
+          <img src={image3} alt='Health Assessment' className='object-cover w-full h-full rounded-sm' />
+        </div>
+        <div className='w-full md:w-2/3 mt-4 md:mt-0 md:ml-4'>
+          <p className="md:text-left text-white leading-7 md:leading-9 text-xl font-bold font-['Poppins'] ml-5">
+            What sets Restory apart from others is our holistic approach to health assessment. In addition to standard blood parameters, we consider over 150 lifestyle factors including nutrition, psychological well-being, and social aspects to provide a thorough evaluation of individual health.
+          </p>
         </div>
       </div>
-      <div className="testimonials" id="testimonial">
-      <div className="arrorback">
-      <IoIosArrowBack  onClick={() => {
-                selected === 0
-                  ? setSelected(tLength - 1)
-                  : setSelected((prev) => prev - 1);
-              }} />
-      </div>
-        <div
-          className="left-t my-20 leading-10 text-xl"
-          style={{ lineHeight: "50px" }}
-        >
-        
-          <motion.span
-            key={selected}
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 100 }}
-            transition={transition}
-          >
-            {testimonialsData[selected].review}
-          </motion.span>
-        </div>
-        <div className="right-t my-10 overflow-hidden">
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ ...transition, duration: 2 }}
-            whileInView={{ opacity: 1, x: 0 }}
-          ></motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ ...transition, duration: 2 }}
-            whileInView={{ opacity: 1, x: 0 }}
-          ></motion.div>
-          <motion.img
-            key={selected}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={transition}
-            src={testimonialsData[selected].image}
-            alt=""
-            height={1000}
-            width={600}
-          />
-          <div className="arrows">
-           <IoIosArrowForward 
-            onClick={() => {
-                selected === tLength - 1
-                  ? setSelected(0)
-                  : setSelected((prev) => prev + 1);
-              }}
-           />
-           
+    </SwiperSlide>
+        <SwiperSlide>
+        <div className='flex flex-col md:flex-row items-center m-4 '>
+        <div className='w-full h-72 md:w-2/3 md:h-80 overflow-hidden pl-2'>
+    <img src={image2} alt='Health Assessment' className=' object-cover w-full h-full rounded-sm' />
+  </div>
+  <div className='w-full md:w-2/3 mt-4 md:mt-0 md:ml-4'>
+            <p className="md:text-left leading-7 md:leading-9 text-xl font-bold font-['Poppins'] text-white ml-5">
+              Our proprietary AI-driven LyfTrac Report synthesizes this information into actionable insights, empowering individuals to make informed and proactive decisions about their health. This is then reviewed by our Medical Team and personalised solutions are provided for each individual tailored to their requirements.
+            </p>
+            </div>
           </div>
-        </div>
-      </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='flex flex-col md:flex-row items-center m-4 '>
+  <div className='w-full h-72 md:w-2/3 md:h-80 overflow-hidden pl-2'>
+    <img src={image1} alt='Health Assessment' className=' object-cover w-full h-full rounded-sm' />
+  </div>
+           <div className='w-full md:w-2/3 mt-4 md:mt-0 md:ml-4'>
+           <p className="md:text-left leading-7 md:leading-9 text-xl font-bold font-['Poppins'] text-white ml-5">
+              Furthermore, Restory conducts prescription audits for all participants, identifying potential drug-drug interactions and instances of medication duplication. Our aim is to ensure that each individual receives personalized attention and guidance for optimal health outcomes.
+            </p>
+           </div>
+          </div>
+        </SwiperSlide>
+        <style>
+        {`
+          .swiper-button-prev,
+          .swiper-button-next {
+            color: white !important;
+          }
+          .swiper-pagination-bullet {
+            background-color: white;
+          }
+          .swiper-pagination-bullet-active {
+            background-color: blue;
+          }
+        `}
+        {`
+          @media (max-width: 768px) {
+            .swiper-button-prev,
+            .swiper-button-next {
+              display: none !important;
+            }
+           
+          }
+        `}
+      </style>
+      </Swiper>
     </div>
   );
-};
+}
 
 export default BodySectionTwo;

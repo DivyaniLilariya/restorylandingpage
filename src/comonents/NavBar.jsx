@@ -17,7 +17,7 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <Disclosure as="nav" className="bg-zinc-200 shadow-lg fixed w-full z-10">
-      {({ open, close }) => ( // Add close function to Disclosure
+      {({ open, close }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 overflow-hidden h-20" style={{ paddingLeft: "10px" }}>
             <div className="relative flex h-full items-center justify-between">
@@ -35,10 +35,10 @@ export default function Example() {
                         'text-gray-900',
                         'rounded-md px-3 py-2 text-md text-md',
                         'hover:text-sky-500',
-                        'hover:border-b-2 border-black' // Add hover effect here
+                        'hover:border-b-2 border-black'
                       )}
                       aria-current={item.current ? 'page' : undefined}
-                      onClick={close} // Close the Disclosure when link is clicked
+                      onClick={() => { close(); window.scrollTo(0, 0); }} // Close and scroll to top
                     >
                       {item.name}
                     </Link>
@@ -46,7 +46,6 @@ export default function Example() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:hidden">
-                {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   {open ? (
                     <XMarkIcon className="block h-7 w-7" aria-hidden="true" />
@@ -67,10 +66,9 @@ export default function Example() {
                   className={classNames(
                     'block',
                     'px-3 py-2 text-base font-medium',
-                    'text-gray-900 hover:text-sky-500',
-                     // Add hover effect here
+                    'text-gray-900 hover:text-sky-500'
                   )}
-                  onClick={close} // Close the Disclosure when link is clicked
+                  onClick={() => { close(); window.scrollTo(0, 0); }} // Close and scroll to top
                 >
                   {item.name}
                 </Link>

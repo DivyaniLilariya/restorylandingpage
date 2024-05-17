@@ -28,67 +28,78 @@ const BodySectionTwo = () => {
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className='p-5'
-       
       >
         <SwiperSlide>
-      <div className='flex flex-col md:flex-row items-center m-4 '>
-        <div className='w-full h-72 md:w-2/3 md:h-80 overflow-hidden pl-2'>
-          <img src={image3} alt='Health Assessment' className='object-cover w-full h-full rounded-sm' />
-        </div>
-        <div className='w-full md:w-2/3 mt-4 md:mt-0 md:ml-4'>
-          <p className="md:text-left text-white leading-7 md:leading-9 text-xl font-bold font-['Poppins'] ml-5">
-            What sets Restory apart from others is our holistic approach to health assessment. In addition to standard blood parameters, we consider over 150 lifestyle factors including nutrition, psychological well-being, and social aspects to provide a thorough evaluation of individual health.
-          </p>
-        </div>
-      </div>
-    </SwiperSlide>
-        <SwiperSlide>
-        <div className='flex flex-col md:flex-row items-center m-4 '>
-        <div className='w-full h-72 md:w-2/3 md:h-80 overflow-hidden pl-2'>
-    <img src={image2} alt='Health Assessment' className=' object-cover w-full h-full rounded-sm' />
-  </div>
-  <div className='w-full md:w-2/3 mt-4 md:mt-0 md:ml-4'>
-            <p className="md:text-left leading-7 md:leading-9 text-xl font-bold font-['Poppins'] text-white ml-5">
-              Our proprietary AI-driven LyfTrac Report synthesizes this information into actionable insights, empowering individuals to make informed and proactive decisions about their health. This is then reviewed by our Medical Team and personalised solutions are provided for each individual tailored to their requirements.
-            </p>
+          <div className='flex flex-col md:flex-row items-center m-4 '>
+            <div className='w-full h-72 md:w-2/3 md:h-80 overflow-hidden '>
+              <img src={image3} alt='Health Assessment' className='object-cover w-full h-full rounded-sm pl-2' />
+            </div>
+            <div className='w-full md:w-2/3 mt-4 md:mt-0 md:ml-4'>
+              <p className="md:text-left text-white leading-7 md:leading-9 text-xl font-bold font-['Poppins'] ml-5">
+                What sets Restory apart from others is our holistic approach to health assessment. In addition to standard blood parameters, we consider over 150 lifestyle factors including nutrition, psychological well-being, and social aspects to provide a thorough evaluation of individual health.
+              </p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='flex flex-col md:flex-row items-center m-4 '>
-  <div className='w-full h-72 md:w-2/3 md:h-80 overflow-hidden pl-2'>
-    <img src={image1} alt='Health Assessment' className=' object-cover w-full h-full rounded-sm' />
-  </div>
-           <div className='w-full md:w-2/3 mt-4 md:mt-0 md:ml-4'>
-           <p className="md:text-left leading-7 md:leading-9 text-xl font-bold font-['Poppins'] text-white ml-5">
-              Furthermore, Restory conducts prescription audits for all participants, identifying potential drug-drug interactions and instances of medication duplication. Our aim is to ensure that each individual receives personalized attention and guidance for optimal health outcomes.
-            </p>
-           </div>
+          <div className='flex flex-col md:flex-row items-center m-4 '>
+            <div className='w-full h-72 md:w-2/3 md:h-80 overflow-hidden '>
+              <img src={image2} alt='Health Assessment' className='object-cover w-full h-full rounded-sm pl-2' />
+            </div>
+            <div className='w-full md:w-2/3 mt-4 md:mt-0 md:ml-4'>
+              <p className="md:text-left leading-7 md:leading-9 text-xl font-bold font-['Poppins'] text-white ml-5">
+                Our proprietary AI-driven LyfTrac Report synthesizes this information into actionable insights, empowering individuals to make informed and proactive decisions about their health. This is then reviewed by our Medical Team and personalised solutions are provided for each individual tailored to their requirements.
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='flex flex-col md:flex-row items-center m-4 '>
+            <div className='w-full h-72 md:w-2/3 md:h-80 overflow-hidden '>
+              <img src={image1} alt='Health Assessment' className='object-cover w-full h-full rounded-sm pl-2' />
+            </div>
+            <div className='w-full md:w-2/3 mt-4 md:mt-0 md:ml-4'>
+              <p className="md:text-left leading-7 md:leading-9 text-xl font-bold font-['Poppins'] text-white ml-5">
+                Furthermore, Restory conducts prescription audits for all participants, identifying potential drug-drug interactions and instances of medication duplication. Our aim is to ensure that each individual receives personalized attention and guidance for optimal health outcomes.
+              </p>
+            </div>
           </div>
         </SwiperSlide>
         <style>
-        {`
-          .swiper-button-prev,
-          .swiper-button-next {
-            color: white !important;
-          }
-          .swiper-pagination-bullet {
-            background-color: white;
-          }
-          .swiper-pagination-bullet-active {
-            background-color: blue;
-          }
-        `}
-        {`
-          @media (max-width: 768px) {
+          {`
             .swiper-button-prev,
             .swiper-button-next {
-              display: none !important;
+              color: white !important;
             }
-           
-          }
-        `}
-      </style>
+            .swiper-pagination-bullet {
+              background-color: white;
+            }
+            .swiper-pagination-bullet-active {
+              background-color: blue;
+            }
+
+            @media (max-width: 768px) {
+              .swiper-button-prev,
+              .swiper-button-next {
+                display: none !important;
+              }
+              .swiper-slide {
+                padding: 0 !important;
+                margin: 0 !important;
+              }
+              .swiper-slide img {
+                border-radius: 0 !important;
+                width: 100%; /* Take full width */
+                height: 100%; /* Ensure full height */
+                min-height: 200px; /* Minimum height */
+              }
+              .swiper-slide p {
+                margin-left: 0 !important;
+                width: 100%; /* Take full width */
+              }
+            }
+          `}
+        </style>
       </Swiper>
     </div>
   );
